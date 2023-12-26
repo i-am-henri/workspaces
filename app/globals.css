@@ -10,6 +10,9 @@
   font-family: 'Satoshi-Regular';
   src: url('../public/Satoshi-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 } 
+* {
+  font-family: "Satoshi-Regular";
+}
 a {
   text-decoration: underline;
 }
