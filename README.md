@@ -3,5 +3,6 @@
 **The website is still under construction!** <br />
 [🌎 website](https://workspaces-wtf.vercel.app/) | [✅ submit](https://workspaces.xyz/submit) | [🐛 report a bug](https://workspaces.xyz/report)<br /><br />
 A modern gallery for workspaces, tools and other good stuff for your desk. A gallery is on our website and you can receive our newsletter.
+
 ---
 a project by [henri](https://henri.gg)
