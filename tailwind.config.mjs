@@ -2,6 +2,10 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		fontFamily: {
+			"satoshi": "Satoshi-Regular",
+			"clash-display": "Clash-Display Semibold"
+		},
 		extend: {},
 	},
 	plugins: [],

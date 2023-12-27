@@ -1,12 +1,12 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import { ViewTransitions } from "astro:transitions";
 interface Props {
 	title: string;
-	className?: string
+	className?: string;
 }
 
 const { title, className } = Astro.props;
-const scheme = "#1e1e1e"
+const scheme = "#1e1e1e";
 ---
 
 <!doctype html>
@@ -24,21 +24,32 @@ const scheme = "#1e1e1e"
 		<main class={className}>
 			<slot />
 		</main>
-	</body>
-</html>
-<style is:global>
-	* {
-		margin: 0px;
-		color: #FFFFF0;
-	}
-	html {
-		background-color: #FFFFF0;
-		color: black;
-	}
-	@media (prefers-color-scheme: dark) {
-		html {
-			background-color: #1e1e1e;
-			color: white;
+	</body><style is:global>
+		* {
+			margin: 0px;
+			color: #fffff0;
+			font-family: "Satoshi-Regular";
 		}
-	}
-</style>
+		h1, h2, h3 {
+			font-family: "ClashDisplay-Semibold";
+		}
+		html {
+			background-color: #fffff0;
+			color: black;
+		}
+		@media (prefers-color-scheme: dark) {
+			html {
+				background-color: #1e1e1e;
+				color: white;
+			}
+		}
+		@font-face {
+			font-family: "ClashDisplay-Semibold";
+			src: url("../public/ClashDisplay-Semibold.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+		}
+		@font-face {
+			font-family: "Satoshi-Regular";
+			src: url("../public/Satoshi-Regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+		}
+	</style>
+</html>
