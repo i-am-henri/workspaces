@@ -1,8 +1,9 @@
 ---
 import Menschen from "../components/menschen";
+import Postsloader from "../components/postsloader.astro";
 import Layout from "../layouts/Layout.astro";
-const files = await Astro.glob("../content/author/*.mdx");
 ---
 <Layout title="lol">
     <Menschen />
+    <Postsloader />
 </Layout>
