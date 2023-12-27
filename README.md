@@ -5,4 +5,4 @@
 A modern gallery for workspaces, tools and other good stuff for your desk. A gallery is on our website and you can receive our newsletter.
 
 ---
-a project by [henri](https://henri.gg)
+a project by [henri](https://henri.gg) made with [astro](https://astro.build) and [figma](https://figma.com)
