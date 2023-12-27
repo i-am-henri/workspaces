@@ -10,7 +10,8 @@ const authorCollection = defineCollection({
     github: z.string().optional(),
     twitter: z.string().optional(),
     linkedin: z.string().optional(),
-    description: z.string()
+    description: z.string(),
+    urlslug: z.string()
   }),
 });
 

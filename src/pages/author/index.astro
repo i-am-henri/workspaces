@@ -1,8 +1,24 @@
 ---
+import { getCollection, getEntries } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
-
+const authors = await getCollection("author");
 ---
-<Layout className="min-h-screen flex flex-col items-center justify-center" title="Authors">
+
+<Layout
+    className="min-h-screen flex flex-col items-center justify-center"
+    title="Authors"
+>
     <h1 class="absolute top-5 text-4xl">Authors of this project</h1>
-    <a class="text-center p-4 bg-[#FFFFF0] rounded-lg w-[85%] lg:w-[30%] md:w-[50%] sm:w-[70%] text-black" href="/author/henri">henri</a>
+    <div class="w-full flex flex-col items-center ">
+        {
+            authors.map((author) => (
+                <a
+                    class="text-center p-4  mt-4 bg-[#FFFFF0] rounded-lg w-[85%] xl:w-[23%] lg:w-[35%] md:w-[50%] sm:w-[70%] text-black"
+                    href={`/author/${author.data.urlslug}`}
+                >
+                    {author.data.name}
+                </a>
+            ))
+        }
+    </div>
 </Layout>
