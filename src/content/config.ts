@@ -5,9 +5,12 @@ import { z, defineCollection } from 'astro:content';
 const authorCollection = defineCollection({
   type: 'content', // v2.5.0 and later
   schema: z.object({
-    title: z.string(),
-    tags: z.array(z.string()),
-    image: z.string().optional(),
+    name: z.string(),
+    imageUrl: z.string().optional(),
+    github: z.string().optional(),
+    twitter: z.string().optional(),
+    linkedin: z.string().optional(),
+    description: z.string()
   }),
 });
 
