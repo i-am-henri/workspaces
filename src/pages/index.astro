@@ -1,9 +1,17 @@
 ---
-import Menschen from "../components/menschen";
-import Postsloader from "../components/postsloader.astro";
+import { getCollection, getEntries } from "astro:content";
 import Layout from "../layouts/Layout.astro";
+const tools = await getCollection("tools");
 ---
-<Layout title="lol">
-    <Menschen />
-    <Postsloader />
+<Layout title="home">
+    <div class="p-10 grid grid-cols-5 ">
+        {
+            tools.map((tool) => (
+                <div class="border-2 border-white">
+                    <h2>{tool.data.name}</h2>
+                    <p>{tool.data.description}</p>
+                </div>
+            ))
+        }
+    </div>
 </Layout>

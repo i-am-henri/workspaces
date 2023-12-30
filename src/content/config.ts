@@ -14,8 +14,18 @@ const authorCollection = defineCollection({
     urlslug: z.string()
   }),
 });
-
+const toolCollection = defineCollection({
+  type: 'content', // v2.5.0 and later
+  schema: z.object({
+    name: z.string(),
+    imageUrl: z.string().optional(),
+    github: z.string().optional(),
+    description: z.string(),
+    urlslug: z.string()
+  }),
+});
 // 3. Export a single `collections` object to register your collection(s)
 export const collections = {
   'author': authorCollection,
+  "tools": toolCollection
 };
