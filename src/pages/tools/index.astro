@@ -1,0 +1,20 @@
+---
+import { getCollection, getEntries } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+const completeTools = await getCollection("tools")
+const tools = completeTools.slice(0, 10);
+---
+<Layout title="home | workspaces.wtf">
+
+    <h2 class="ml-10 mt-10">all tools:</h2>
+    <div class="p-10  grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2">
+        {
+            tools.map((tool) => (
+                <div class="border-2 p-4 bg-[#121212] border-white rounded-md">
+                    <h2>{tool.data.name}</h2>
+                    <p>{tool.data.description}</p>
+                </div>
+            ))
+        }
+    </div>
+</Layout>
