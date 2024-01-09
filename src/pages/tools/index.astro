@@ -11,6 +11,7 @@ const tools = completeTools.slice(0, 10);
         {
             tools.map((tool) => (
                 <div class="border-2 p-4 bg-[#121212] border-white rounded-md">
+                    <img class="rounded-md" src={tool.data.image} >
                     <h2>{tool.data.name}</h2>
                     <p>{tool.data.description}</p>
                 </div>

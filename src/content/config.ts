@@ -18,7 +18,7 @@ const toolCollection = defineCollection({
   type: 'content', // v2.5.0 and later
   schema: z.object({
     name: z.string(),
-    imageUrl: z.string().optional(),
+    image: z.string().optional(),
     github: z.string().optional(),
     description: z.string(),
     urlslug: z.string()
