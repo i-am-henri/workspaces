@@ -1,4 +1,5 @@
-![github readme workspaces](https://github.com/i-am-henri/workspaces/assets/98414850/8195a553-1f80-49bb-b8df-18f0daa57d56)
+# workspaces.wtf![workspaces github readme](https://github.com/i-am-henri/workspaces.wtf/assets/98414850/a0abcd14-666a-4efe-ad26-fa21e71ed02c)
+*image by @henri*
 # workspaces.wtf
 **The website is still under construction!** <br />
 [🌎 website](https://workspaces-wtf.vercel.app/) | [✅ submit](https://workspaces.wtf/submit) | [🐛 report a bug](https://workspaces.wtf/report)<br /><br />
